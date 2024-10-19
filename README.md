@@ -1,4 +1,5 @@
-Hi there i am Mieraf Abebe
+# Hi there , I am Mieraf Abebe
+# software engineer student
 # 💫 About Me:
 🔭 I’m currently working on Building interactive and responsive web applications using React<br>🌱 I’m currently learning: Advanced React techniques, TypeScript, and exploring backend technologies like Node.js and Express.<br>👯 I’m looking to collaborate on Open-source projects related to web development, especially those using React or JavaScript.<br>📫 How to reach me: linkedin<br>😄 Pronouns:she/her<br>⚡ Fun fact:
 
