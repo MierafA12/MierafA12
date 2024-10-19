@@ -1,140 +1,19 @@
-### Hi there 👋 I am Mieraf 
+Hi there i am Mieraf Abebe
+# 💫 About Me:
+🔭 I’m currently working on Building interactive and responsive web applications using React<br>🌱 I’m currently learning: Advanced React techniques, TypeScript, and exploring backend technologies like Node.js and Express.<br>👯 I’m looking to collaborate on Open-source projects related to web development, especially those using React or JavaScript.<br>📫 How to reach me: linkedin<br>😄 Pronouns:she/her<br>⚡ Fun fact:
 
 
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/in/mieraf-abebe-971ba1323) 
 
-// Handle theme changes
-document.getElementById('theme').addEventListener('change', function() {
-    const selectedTheme = this.value;
-    const buttons = document.querySelectorAll('button');
+# 💻 Tech Stack:
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=MierafA12&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=MierafA12&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=MierafA12&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-    if (selectedTheme === 'classic') {
-        buttons.forEach(btn => {
-            btn.style.backgroundColor = 'white';
-            btn.style.color = 'black';
-            btn.style.fontFamily = 'Arial, sans-serif';
-        });
-    } else if (selectedTheme === 'fantasy') {
-        buttons.forEach(btn => {
-            btn.style.backgroundColor = '#FFD700';  // Gold background
-            btn.style.color = '#8B0000';  // Dark red text
-            btn.style.fontFamily = '"Comic Sans MS", cursive, sans-serif';
-        });
-    } else if (selectedTheme === 'modern') {
-        buttons.forEach(btn => {
-            btn.style.backgroundColor = '#333';  // Dark background
-            btn.style.color = '#FFF';  // White text
-            btn.style.fontFamily = 'Helvetica, sans-serif';
-        });
-    }
-});
+---
+[![](https://visitcount.itsvg.in/api?id=MierafA12&icon=0&color=0)](https://visitcount.itsvg.in)
 
-// const buttons = document.querySelector('button');	
-// const body = document.querySelector('body');
-
-// buttons.addEventListener('click', () => {
-//     body.classList.toggle('active');
-// }); 
-
-// buttons.addEventListener('mouseenter', function() {
-//     body.style.backgroundImage = 'url(o.jpg)';
-    
-// });
-
-let currentPlayer = 'X'; // Start with 'X'
-let board = ['', '', '', '', '', '', '', '', '']; // Represents the game state
-let gameActive = false; // To track whether the game has started
-
-const buttons = document.querySelectorAll('.all button');
-const body = document.querySelector('body');
-const winnerDisplay = document.getElementById('winner');
-const startButton = document.getElementById('start');
-const historyList = document.getElementById('history-list');
-const resetButton = document.getElementById('reset');
-
-// Function to handle cell clicks
-function handleClick(event) {
-    if (!gameActive) return; // Don't allow moves if the game hasn't started
-
-    const button = event.target;
-    const index = Array.from(buttons).indexOf(button);
-
-    // If the cell is empty and no one has won
-    if (board[index] === '' && !winnerDisplay.textContent) {
-        button.textContent = currentPlayer; // Place the current player's mark
-        board[index] = currentPlayer; // Update game state
-
-        // Switch background based on current player
-        if (currentPlayer === 'O') {
-            body.classList.remove('player-x');
-            body.classList.add('player-o');
-        } else {
-            body.classList.remove('player-o');
-            body.classList.add('player-x');
-        }
-
-        checkWinner(); // Check if we have a winner
-        currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // Switch player
-    }
-}
-
-function updateHistory() {
-    // Clear the current history
-    historyList.innerHTML = '';
-
-    // Append each move to the history list
-    moveHistory.forEach(move => {
-        const listItem = document.createElement('li');
-        listItem.textContent = move;
-        historyList.appendChild(listItem);
-    });
-}
-// Function to check if a player has won
-function checkWinner() {
-    const winningCombinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-        [0, 4, 8], [2, 4, 6]  // Diagonals
-    ];
-
-    for (const combination of winningCombinations) {
-        const [a, b, c] = combination;
-        if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-            winnerDisplay.textContent = `Player ${currentPlayer} wins!`;
-            gameActive = false; // Stop the game once we have a winner
-            return;
-        }
-    }
-
-    // If all cells are filled and no one has won, it's a draw
-    if (board.every(cell => cell !== '')) {
-        winnerDisplay.textContent = "It's a draw!";
-        gameActive = false;
-    }
-}
-
-// Start Game function
-function startGame() {
-    gameActive = true; // Game is active
-    currentPlayer = 'X'; // X always starts first
-    board = ['', '', '', '', '', '', '', '', '']; // Reset the game state
-    buttons.forEach(button => button.textContent = ''); // Clear all buttons
-    winnerDisplay.textContent = ''; // Clear the winner message
-    body.classList.remove('player-o');
-    body.classList.add('player-x'); // Default to X's background
-}
-
-// Reset Game function
-function resetGame() {
-    gameActive = false; // Stop the game
-    currentPlayer = 'X'; // Reset to player X
-    board = ['', '', '', '', '', '', '', '', '']; // Clear the board state
-    buttons.forEach(button => button.textContent = ''); // Clear all button text
-    winnerDisplay.textContent = ''; // Clear the winner message
-    body.classList.remove('player-o');
-    body.classList.add('player-x'); // Default to X's background
-}
-
-// Add event listeners to the buttons
-buttons.forEach(button => button.addEventListener('click', handleClick));
-startButton.addEventListener('click', startGame);
-resetButton.addEventListener('click', resetGame);
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
