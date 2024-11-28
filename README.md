@@ -1,3 +1,5 @@
+
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=MierafA12&data=followers,repositories,stars,commits&theme=viridescent)](https://github.com/MierafA12)
 # Hi there 👋 , I am Mieraf Abebe
 # software engineer student
 # 💫 About Me:
