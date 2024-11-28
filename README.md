@@ -1,7 +1,10 @@
 
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=MierafA12&data=followers,repositories,stars,commits&theme=viridescent)](https://github.com/MierafA12)
-# Hi there 👋 , I am Mieraf Abebe
-# software engineer student
+
+ <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExem9pdDNmdjczb25pMzVrbGRvYWlzbzR2OHJmMGFmaXZka2tlODJ1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CcwLAV11cALh3OuEJ5/giphy.gif" 
+                 width="400" 
+                 style="margin-bottom: 10px; border-radius: 10px; margin-left: 500px;" />
+
 # 💫 About Me:
 🔭 I’m currently working on Building interactive and responsive web applications using React<br>🌱 I’m currently learning: Advanced React techniques, TypeScript, and exploring backend technologies like Node.js and Express.<br>👯 I’m looking to collaborate on Open-source projects related to web development, especially those using React or JavaScript.<br>📫 How to reach me: linkedin<br>😄 Pronouns:she/her<br>⚡ Fun fact:
 
