@@ -6,7 +6,7 @@
                  style="margin-bottom: 10px; border-radius: 10px; margin-left: 500px;" />
 
 # 💫 About Me:
-🔭 I’m currently working on Building interactive and responsive web applications using React<br>🌱 I’m currently learning:  mobile app dev .<br>👯 I’m looking to collaborate on Open-source projects related to web development.<br>📫 How to reach me: linkedin ,telegram <br>😄 Pronouns:she/her<br>⚡ Fun fact:
+🔭 I’m currently working on Building interactive and responsive web applications using React and also mobile app <br>🌱 I’m currently learning:  mobile app dev .<br>👯 I’m looking to collaborate on Open-source projects related to web development.<br>📫 How to reach me: linkedin ,telegram <br>😄 Pronouns:she/her<br>⚡ Fun fact:
 
 
 ## 🌐 Socials:
